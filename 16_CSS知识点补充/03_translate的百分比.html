@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 400px;
+            background-color: #f00;
+        }
+
+        .box a {
+            transform: skew();
+        }
+
+        .box .test {
+            color: #fff;
+            transform: translate(100px);
+        }
+
+        span {
+            /* transform: translate(100px); */
+            transform: scale(2);
+            display: inline-block;
+        }
+
+        strong {
+            /* inline-level: (inline/inline replaced element/inline-block) inline */
+            display: inline-block;
+            transform: translate(100px);
+        }
+    </style>
+</head>
+<body>
+    <span>span元素</span>
+    <div class="box">
+        <a href="#">
+            <img src="../img/bd_logo1.png" alt="">
+        </a>
+        <a href="#" class="test">aaaaa</a>
+    </div>
+
+    <strong>strong元素</strong>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 
+            基本层叠: 后面一定把前面层叠掉
+            前提: 使用了相同的选择器
+        */
+        .box1 {
+            color: red;
+        }
+
+        .box2 {
+            background-color: green;
+            color: purple;
+        }
+
+        .box3 {
+            width: 300px;
+            color: orange;
+        }
+
+        /* 2.给第二个div设置样式 */
+        /* 
+            当选择器不同时, 就不能按照基本层叠来理解了
+            需要知道选择器的权重: 
+                !important: 10000
+                内联样式: 1000
+                id: 100
+                class/属性/伪类: 10
+                元素/伪元素: 1
+                统配选择器: 0
+         */
+        #main {
+            color: blue;
+            font-size: 30px;
+        }
+        
+        .box {
+            color: green;
+            font-size: 12px !important;
+
+            background-color: purple;
+        }
+
+        div {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* 3.作用于第三个div */
+        #main {
+            color: red;
+        }
+
+        .box1.box2.box3.box4.box5.box6.box7.box8.box9.box10.box11 {
+            color: green;
+
+            font-size: 12px;
+            font: 15px "宋体";
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 box2 box3">哈哈哈哈</div>
+
+    <div id="main" class="box" style="color: yellowgreen">呵呵呵呵呵</div>
+
+    <div id="main" class="box1 box2 box3 box4 box5 box6 box7 box8 box9 box10 box11">嘻嘻嘻嘻嘻</div>
+
+    <p>
+        <div>哈哈哈</div>
+    </p>
+</body>
+</html>

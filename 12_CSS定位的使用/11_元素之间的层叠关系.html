@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: #f00;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+
+        .box2 {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        span {
+            position: relative;
+            background-color: orange;
+            left: -100px;
+
+            z-index: 9;
+        }
+
+        strong {
+            position: relative;
+            background-color: green;
+
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+
+    <div style="position: absolute;">
+        <ul>
+            <li><strong>strong元素</strong></li>
+        </ul>
+    </div>
+
+    <div style="position: absolute;">
+        <a href="#"> <span>哈哈哈哈</span></a>
+    </div>
+
+    <div class="box2"></div>
+
+</body>
+</html>

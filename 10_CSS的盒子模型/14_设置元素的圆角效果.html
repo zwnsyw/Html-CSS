@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+
+            border: 20px solid black;
+
+            background-color: #f00;
+            margin-bottom: 20px;
+        }
+
+        .box1 {
+            /* 针对每一个角落单独设置 */
+            /* border-top-left-radius: 10px 50px; */
+            /* border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px; */
+
+            border-radius: 50px;
+        }
+
+        .box2 {
+            /* border-radius: 120px; */
+            /* 强调:border-radius参考是当前元素的border+padding+width  */
+            /* 240*0.5 = 120 */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

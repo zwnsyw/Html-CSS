@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 样式重置 */
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+    padding: 0;
+    margin: 0;
+}
+  
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+i, em {
+    font-style: normal;
+}
+
+input, textarea, button, select, a {
+    outline: none;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+  

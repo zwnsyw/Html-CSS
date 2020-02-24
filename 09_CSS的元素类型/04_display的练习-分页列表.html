@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 1.样式的重置 */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0000cc;
+        }
+
+        /* 2.整体样式 */
+
+
+        /* 3.每一个li的样式 */
+        .page ul li {
+            display: inline-block;
+        }
+
+        .page ul li a {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            border: 1px solid #e1e2e3;
+
+            font-size: 14px;
+
+            /* 调整间距 */
+            margin-right: 5px;
+
+            /* 居中 */
+            text-align: center;
+            line-height: 34px;
+        }
+
+        .page ul li a:hover {
+            border: 1px solid #38f;
+            background-color: #f2f8ff;
+        }
+
+        .page .prev a, .page .next a {
+            width: 88px;
+        }
+
+        /* 4.点击后的a效果 */
+        .page .active {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+
+            border: none;
+            font-weight: 700;
+            color: #000;
+
+            /* 不好: 依然是可以点击 */
+            /* cursor: initial; */
+        }
+
+        .page .active:hover {
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- .page>ul>(li{&lt;上一页}>a[href=#])+(li{$}*10>a[href=#])+li{下一页&gt;}>a[href=#] -->
+
+    <div class="page">
+        <ul>
+            <li class="prev"><a href="#">&lt;上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a class="active">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li class="next"><a href="#">下一页&gt;</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

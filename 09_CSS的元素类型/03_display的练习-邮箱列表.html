@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 样式重置 */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* 整体的样式 */
+        .email {
+            width: 100px;
+            border: 2px solid #999;
+            text-align: center;
+        }
+
+        .email:hover ul {
+            display: block;
+        }
+
+        /* 局部: header */
+        /* .header:hover+ul {
+            display: block;
+            background-color: #f00;
+        } */
+
+        .header {
+            background-color: #999;
+            color: #fff;
+        }
+
+        /* 局部: 邮箱列表 */
+        .email ul {
+            display: none;
+        }
+
+        .email ul li a:hover {
+            background-color: skyblue;
+        }
+
+        .email ul li a {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="email">
+        <div class="header">邮箱</div>
+        <ul>
+            <li><a href="#">QQ邮箱</a></li>
+            <li><a href="#">163邮箱</a></li>
+            <li><a href="#">139邮箱</a></li>
+        </ul>
+    </div>
+
+    <div class="product">
+        <ul class="list">
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+</html>

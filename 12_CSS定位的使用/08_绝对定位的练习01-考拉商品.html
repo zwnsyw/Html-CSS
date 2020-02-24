@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <style>
+        .beauty-left {
+            position: relative;
+            background-color: #f00;
+            display: inline-block;
+        }
+
+        .beauty-left ul {
+            position: absolute;
+            bottom: 30px;
+            width: 285px;
+
+            text-align: justify;
+            text-align-last: justify;
+
+            /* 居中显示 */
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .beauty-left ul li {
+            display: inline-block;
+        }
+
+        .beauty-left ul li a {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 10px;
+            font-size: 12px;
+            
+            text-align: center;
+            text-align-last: center;
+
+            border: 1px solid #eaeaea;
+            border-radius: 40px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+            background-color: #fff;
+        }
+
+        .beauty-left ul li a:hover {
+            color: #ff1e32;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="beauty-left">
+        <a href="#">
+            <img src="./img/beauty-left-img.jpg" alt="">
+        </a>
+        <ul>
+            <li><a href="#">精致护肤</a></li>
+            <li><a href="#">人气面膜</a></li>
+            <li><a href="#">大牌彩妆</a></li>
+            <li><a href="#">防晒修护</a></li>
+            <li><a href="#">迷人香氛</a></li>
+            <li><a href="#">面部精华</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

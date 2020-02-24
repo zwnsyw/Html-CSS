@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [title] {
+            color: #f00;
+        }
+
+        /* [title="div元素"] {
+            font-size: 25px;
+        } */
+
+        [title="one div元素"] {
+            font-size: 25px;
+        }
+
+
+        /* 了解一下 */
+        /* title中包含one单词 */
+        [title*="one"] {
+            background-color: #00f;
+        }
+
+        /* title以one开头 */
+        /* [title^="one"] {
+            background-color: #00f;
+        } */
+        
+        /* title以one结束 */
+        /* [title$="one"] {
+            background-color: #00f;
+        } */
+    </style>
+</head>
+<body>
+    <div title="one div元素">我是div元素</div>
+    <p title="p元one素">我是p元素</p>
+    <p title="p one">我是p元素</p>
+    <p>我也是p元素</p>
+    <span title="one span元素">我是span元素</span>
+</body>
+</html>

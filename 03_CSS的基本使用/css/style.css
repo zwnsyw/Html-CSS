@@ -1,0 +1,25 @@
+/* 指定css文件的编码 */
+@charset "utf-8";
+@import url("./base.css");
+
+/* 单个选中h1元素 */
+h1 {
+    font-size: 50px;
+}
+
+div {
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+
+/* 并集选择器 */
+h1, p, a {
+    color: red;
+}
+
+/* 类选择器 */
+.red {
+    color: red;
+    /* font-family: "华文宋体"; */
+}

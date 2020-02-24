@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 后代选择器 */
+        /* 选中 div下面的span元素(直接子元素和间接后代元素) */
+        /* div span {
+            color: #f00;
+        } */
+
+        div p span {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <span>文字内容1</span>
+    <div>
+        <span>文字内容2</span>
+        <p>
+            <span>文字内容3</span>
+        </p>
+        <div>
+            <span>文字内容4</span>
+        </div>
+        <span>文字内容5</span>
+    </div>
+    <div>
+        <a href="#">
+            <span>文字内容6</span>
+        </a>
+    </div>
+</body>
+</html>

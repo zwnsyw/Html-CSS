@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 200px;
+            background: orange;
+        }
+
+        .inner {
+            height: 30px;
+            background-color: #f00;
+        }
+
+        .p {
+            background-color: #0f0;
+        }
+
+        span {
+            background-color: #00f;
+        }
+
+        strong {
+            background-color: #ff0;
+        }
+
+        img {
+            width: 500px;
+            height: 200px;
+        }
+
+        input {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        块级元素的特点: 独占父元素的一行
+        行内级元素的特点: 和其他元素可以在同一行显示
+     -->
+
+     <!-- 1.块级元素 -->
+     <div class="box">
+        <div class="inner"></div>
+        <p class="p">我是段落</p>
+     </div>
+
+     <!-- 2.行内级元素 -->
+     <span>我是span元素</span>
+     <strong>我是strong元素</strong>
+
+     <img src="../img/test_01.webp" alt="">
+     <input type="text">
+     <iframe src="http://www.baidu.com" frameborder="0"></iframe>
+</body>
+</html>

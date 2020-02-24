@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+
+            margin: 100px auto 0;
+
+            
+            /* transition: 值1 transition-property:transform/width/height/all 
+                        值2 transition-duration: 100ms(毫秒)/1s(秒)
+                        值3 transition-timing-function: 动画的变化速度: ease/ease-in
+                        值4 transition-delay: 延迟/等待多久再执行这个动画; */
+            transition: all 300ms linear;
+        }
+
+        .box:hover {
+            /* width: 200px;
+            height: 200px; */
+            /* transform: scale(2) */
+            transform: rotate(180deg)
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 990px;
+            background-color: #f00;
+            margin: 0 auto;
+        }
+
+        .wrap {
+            margin-right: -10px;
+        }
+
+        .item {
+            float: left;
+
+            margin-right: 10px;
+            width: 240px;
+            background-color: orange;
+        }
+
+        .itema {
+            height: 306px;
+        }
+
+        .itemb {
+            height: 148px;
+        }
+
+        .item-last {
+            margin-top: 10px;
+        }
+
+        /* .container::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+
+        .content::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .brand::after {
+            content: "";
+            clear: both;
+            display: block;
+        } */
+        
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: block;
+
+            height: 0;
+            visibility: hidden;
+        }
+
+        .clear-fix {
+            /* 兼容IE6和7 */
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container clear-fix">
+        <div class="wrap">
+            <div class="item itema"></div>
+            <div class="item itema"></div>
+    
+            <div class="item itemb"></div>
+            <div class="item itemb"></div>
+            <div class="item itemb item-last"></div>
+            <div class="item itemb item-last"></div>
+        </div>
+        <!-- <div class="clear-fix"></div> -->
+    </div>
+
+    <div class="brand clear-fix"></div>
+
+    <!-- <div class="clear-fix"></div> -->
+
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+
+</body>
+</html>

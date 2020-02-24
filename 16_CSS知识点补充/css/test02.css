@@ -1,0 +1,7 @@
+.container p {
+  color: orange;
+}
+.container .box a {
+  color: orange;
+  font-size: 40px;
+}

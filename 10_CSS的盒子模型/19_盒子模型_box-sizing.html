@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+
+            padding-bottom: 20px;
+            border-bottom: 20px solid purple;
+
+            /* 内容盒子 */
+            /* content-box: 含义是设置宽度和高度时只是指定内容的宽高 */
+            /* border-box:  含义是设置宽度和高度时是内容+内边距+边框的宽度 */
+            /* 盒子的内减 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <span>span元素</span>
+
+</body>
+</html>

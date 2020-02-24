@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* nth-child: 正着数(从前向后) */
+        /* nth-last-child倒着数(从后向前) */
+        
+        /* 1.跟数字 */
+        p:nth-last-child(3) {
+            color: red;
+        }
+
+        /* 2.跟n */
+        /* 0, 1, 2, 3 */
+        /* 1, 3, 5, 7 */
+        p:nth-last-child(2n+1) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>文字内容1</p>
+        <p>文字内容2</p>
+        <p>文字内容3</p>
+        <p>文字内容4</p>
+        <p>文字内容5</p>
+        <p>文字内容6</p>
+        <p>文字内容7</p>
+        <p>文字内容8</p>
+        <p>文字内容9</p>
+    </div>
+</body>
+</html>

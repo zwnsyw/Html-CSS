@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 除了div之外,所有的元素 */
+        /* body :not(p) {
+            color: red;
+        } */
+
+        :not(html) :not(body):not(div) {
+            color: red;
+        }
+
+        /* body :not(body):not(div) {
+            color: red;
+        }
+
+        div :not(body):not(div) {
+            color: red;
+        } */
+
+        .p2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>文字内容1</div>
+
+    <p class="p2">文字内容2</p>
+
+    <span class="text">文字内容3</span>
+    <div>文字内容4</div>
+
+    <div>
+        <span>哈哈哈哈</span>
+    </div>
+</body>
+</html>

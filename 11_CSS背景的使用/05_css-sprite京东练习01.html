@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /* reset.css */
+        p, ul, body, h5 {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* common.css */
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .nav {
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* 具体的样式 */
+        li, h5, p {
+            display: inline-block;
+            /* float: left; */
+            vertical-align: middle;
+        }
+
+        .service ul li {
+            margin-left: 12px;
+            margin-right: 25px;
+        }
+
+        .service ul li p {
+            height: 42px;
+            line-height: 42px;
+
+            font-size: 18px;
+            color: #444;
+            font-weight: 700;
+
+            margin-left: 3px;
+        }
+
+        .service ul li h5 {
+            width: 36px;
+            height: 42px;
+            text-indent: -999px;
+            background-image: url("../img/jd_sprite_01.png");
+        }
+
+        .service ul li:nth-child(1) h5 {
+            background-position: 0 -192px;
+        }
+
+        .service ul li .kuai {
+            background-position: -41px -192px;
+        }
+
+        .service ul li .hao {
+            background-position: -82px -192px;
+        }
+
+        .service ul li .sheng {
+            background-position: -123px -192px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 1.测试 -->
+    <div class="nav wrap">
+        <div class="left">左边的内容</div>
+        <div class="right">右边的内容</div>
+    </div>
+    <div class="header wrap">
+        
+    </div>
+    <div class="footer wrap"></div>
+
+    <!-- 2.多快好省 -->
+    <div class="service wrap">
+        <ul>
+            <li>
+                <h5 class="duo">多</h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5 class="kuai">快</h5>
+                <p>多仓直发，极速配送</p>
+            </li>
+            <li>
+                <h5 class="hao">好</h5>
+                <p>正品行货，精致服务</p>
+            </li>
+            <li>
+                <h5 class="sheng">省</h5>
+                <p>天天低价，畅选无忧</p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

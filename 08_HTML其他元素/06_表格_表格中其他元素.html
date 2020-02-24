@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table {
+            /* 1.边框的宽度 2.实线/虚线 3.边框的颜色 */
+            border: 1px solid #666;
+
+            /* 重点: 将边框合并 */
+            border-collapse: collapse;
+
+            /* table的居中显示 */
+            margin: 20px auto;
+        }
+
+        caption {
+            font-weight: 700;
+            font-size: 25px;
+
+            /* 增加底部的外边距 */
+            margin-bottom: 20px;
+        }
+
+        td, th {
+            border: 1px solid #666;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- table>(tr>td{单元格$}*5)*3 -->
+    <!-- <h2>影院电影放映列表</h2> -->
+    <table>
+        <caption>影院电影放映列表</caption>
+        <thead>
+            <tr>
+                <th>单元格1</th>
+                <th>单元格2</th>
+                <th>单元格3</th>
+                <th>单元格4</th>
+                <th>单元格5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>单元格1</td>
+                <td>单元格2</td>
+                <td>单元格3</td>
+                <td>单元格4</td>
+                <td>单元格5</td>
+            </tr>
+            <tr>
+                <td>单元格1</td>
+                <td>单元格2</td>
+                <td>单元格3</td>
+                <td>单元格4</td>
+                <td>单元格5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>页脚1</td>
+                <td>页脚2</td>
+                <td>页脚3</td>
+                <td>页脚4</td>
+                <td>页脚5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

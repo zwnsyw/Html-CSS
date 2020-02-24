@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <style>
+        .phone {
+            position: relative;
+
+            /* 为了能看到下拉出来的内容 */
+            margin-left: 300px;
+        }
+
+        .phone>span {
+            font-size: 12px;
+        }
+
+        .phone .code {
+            display: none;
+            position: absolute;
+            top: 27px;
+            left: 0;
+            /* left: -64px; */
+            transform: translate(-50%);
+            margin-left: 50%;
+
+            padding: 5px 5px 0;
+            border: 1px solid #eaeaea;
+        }
+
+        .phone .code img {
+            margin-bottom: 3px;
+        }
+
+        .phone .code span {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .arrow {
+            position: absolute;
+            top: -5px;
+            /* left: 58px; */
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+
+            border-top: 1px solid #eaeaea;
+            border-left: 1px solid #eaeaea;
+
+            transform: rotate(45deg);
+        }
+
+        /* 显示和效果 */
+        .phone span:hover+.code {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    
+    <a class="phone" href="#">
+        <span>手机考拉</span>
+        <span class="code">
+            <span class="arrow"></span>
+            <img src="./img/qrcode.png" alt="">
+            <span>下载APP</span>
+            <span>领1000元新人礼包</span>
+        </span>
+    </a>
+
+
+</body>
+</html>

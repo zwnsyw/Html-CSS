@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+
+/* 热门品牌相关的样式 */
+#main .brand {
+    margin-top: 100px;
+}
+
+#main .brand .left {
+    float: left;
+
+    width: 219px;
+    height: 355px;
+    border-right: 1px solid #ccc;
+
+    background-color: #333;
+}
+
+#main .brand .left img {
+    width: 219px;
+    height: 219px;
+}
+
+#main .brand .left .progress {
+    width: 100px;
+    height: 3px;
+    background-color: #ff1e32;
+}
+
+#main .brand .left .info {
+    color: #fff;
+    text-align: center;
+}
+
+#main .brand .left .info span {
+    display: block;
+}
+
+#main .brand .left .info .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+#main .brand .left .info .desc {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#main .brand .list {
+    width: 880px;
+    float: left;
+    height: 354px;
+    border-top: 1px solid #ccc;
+}
+
+#main .brand .list li {
+    position: relative;
+    float: left;
+    width: 219px;
+    height: 176px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+
+    text-align: center;
+}
+
+#main .brand .list li:hover .active {
+    opacity: 1;
+}
+
+#main .brand .list li:hover .desc {
+    opacity: 0;
+}
+
+#main .brand .list li:hover img {
+    transform: scale(.66);
+}
+
+#main .brand .list li img {
+    margin-top: 12px;
+    transition: transform .3s ease;
+    transform-origin: center 0;
+}
+
+#main .brand .list li .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+
+    transition: opacity .3s ease;
+}
+
+#main .brand .list li .active {
+    opacity: 0;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    transition: opacity .3s ease;
+}
+
+#main .brand .list li .focus {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 52px;
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 10px;
+
+}
+
+#main .brand .list li .info {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#main .brand .list li .info a {
+    display: inline-block;
+    width: 76px;
+    height: 32px;
+    line-height: 32px;
+    border: 2px solid #ff1e32;
+    border-radius: 18px;
+    font-size: 14px;
+    color: #ff1e32;
+    margin-top: 5px;
+}
+
+#main .beauty {
+    height: 500px;
+    background-color: #f00;
+}
+
+
+/* #main .brand {
+    height: 355px;
+} */

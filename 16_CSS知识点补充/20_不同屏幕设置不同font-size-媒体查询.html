@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /* 1.使用媒体查询 */
+        /* iphone5 320px */
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 9px;
+            }
+        }
+
+        /* iphone6 375px */
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 10px;
+            }
+        }
+        
+        /* iphone6 plus 414px */
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 11px;
+            }
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            background-color: #f00;
+            color: #fff;
+            /* 18 20 22px */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        我是文本
+    </div>
+
+</body>
+</html>

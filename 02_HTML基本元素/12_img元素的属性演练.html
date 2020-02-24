@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        src: source
+          * 远程图片地址
+          * 本地图片地址(路径)
+            * 绝对路径: 
+              * 路径: C:\Users\UI\Desktop\资料共享\01-HTML-CSS\Day 01\上课代码\LearnHTML_CSS\img\test_01.webp
+              * 特点: 从根路径下面开始找
+              * 缺点: 一旦位置位置发生改变, 那么就有可能出现文件(图片)找不到的情况
+            * 相对路径: 
+              规则: 
+                . 当前路径(目录)
+                .. 上一层路径(目录)
+            
+     -->
+    <p>网络图片地址</p>
+    <img src="https://img.alicdn.com/bao/uploaded/i3/TB17fLDFVXXXXbAXXXXXXXXXXXX_!!0-item_pic.jpg_180x180q90.jpg_.webp" alt="">
+
+    <p>本地图片地址(绝对路径)</p>
+    <img src="C:\Users\UI\Desktop\资料共享\01-HTML-CSS\Day 01\上课代码\LearnHTML_CSS\img\test_01.webp" alt="">
+
+    
+    <p>本地图片地址(相对路径)</p>
+    <img src="../img/test_01.webp" alt="">
+    <img src="./test_01.webp" alt="">
+    <img src="test_01.webp" alt="">
+</body>
+</body>
+</html>

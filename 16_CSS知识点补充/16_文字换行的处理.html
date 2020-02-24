@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p {
+            background-color: #f00;
+            color: #fff;
+            width: 100px;
+            margin: 0 auto;
+
+            /* 显示两行文本并且显示省略号的方法 */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            
+            /* 显示一行文本并且显示省略号的方法 */
+            /* 文字超出后是否自动换行 */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        我是一个段落p元素的内容, 哈哈哈哈哈哈哈哈
+    </p>
+
+</body>
+</html>

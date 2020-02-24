@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+
+            border-top: 20px solid yellowgreen;
+            border-left: 20px solid purple;
+        }
+
+        .box2, .box3, .box4, .box5 {
+            width: 0;
+            height: 0;
+        }
+
+        .box2 {
+            border-top: 100px solid yellowgreen;
+            border-left: 100px solid purple;
+        }
+
+        .box3 {
+            border-width: 50px;
+            border-style: solid;
+
+            border-top-color: purple;
+            border-right-color: orange;
+            border-bottom-color: orchid;
+            border-left-color: powderblue;
+        }
+
+        .box4 {
+            border-width: 50px;
+            border-style: solid;
+
+            border-top-color: purple;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+
+        .box5 {
+            border-top: 100px solid green;
+            border-left: 100px solid transparent;
+
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+
+    <div class="box4"></div>
+
+    <div class="box5"></div>
+
+</body>
+</html>

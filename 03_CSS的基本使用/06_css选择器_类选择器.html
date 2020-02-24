@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 1.设置文字颜色相关 */
+        div {
+            color: red;
+        }
+
+        .box1 {
+            color: green;
+        }
+
+        .box2 {
+            color: pink;
+        }
+
+        .box3 {
+            color: purple;
+        }
+
+        /* 2.设置文字的大小: 文字2和文字4大小是25px */
+        .large-font {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        类的名字规范: 
+            1.尽量见名之意
+            2.当多个单词时, 以什么样方式连接
+                * - 连接: large-font
+                * _ 连接: large_font
+                * 驼峰连接: largeFont
+    -->
+    <div class="box1">文字内容1</div>
+    <p class="large-font">文字内容2</p>
+    <a href="#">文字内容3</a>
+    <!-- 强调: 一个元素是可以有多个类的, 多个类以空格进行分割 -->
+    <div class="box2 large-font">文字内容4</div>
+    <div class="box3">文字内容5</div>
+    <div class="box2">文字内容6</div>
+    <p>文字内容7</p>
+</body>
+</html>

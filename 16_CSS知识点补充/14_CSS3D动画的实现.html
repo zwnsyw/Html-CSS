@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        body {
+            /* 视距: 1000px */
+            perspective: 1000px;
+        }
+
+        /* .box {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #f00;
+
+            transform: translateZ(200px);
+        } */
+
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+
+            transform-style: preserve-3d;
+            transform: rotateY(70deg);
+            background-color: #0ff;
+        }
+
+        .container .item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container .item1 {
+            background-color: #f00;
+            transform: translateZ(-60px);
+        }
+
+        .container .item2 {
+            background-color: #0f0;
+            transform: translateZ(-120px);
+        }
+
+        .container .item3 {
+            background-color: #00f;
+            transform: translateZ(-180px);
+        }
+
+        .container .item4 {
+            background-color: #ff0;
+            transform: translateZ(-240px);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="`">
+    <title>Document</title>
+
+    <style>
+        /* CSS reset */
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a  {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .f-left {
+            float: left;
+        }
+
+        .f-right {
+            float: right;
+        }
+
+        /* 样式相关 */
+        .header {
+            width: 1100px;
+            margin: 0 auto;
+            /* background-color: #0f0; */
+            height: 49px;
+        }
+
+        .header-left {
+            /* float: left; */
+            font-size: 14px;
+        }
+
+        .header-left h2, .header-left span, .header-left a {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .header-left h2 {
+            font-size: 22px;
+        }
+
+        .header-left .search {
+            margin-top: 9px;
+        }
+
+        .header-left .search a:hover {
+            text-decoration: underline;
+        }
+
+        .header-left .search .hot {
+            color: #ff080f;
+        }
+
+        .header-right {
+            /* float: right; */
+            margin-top: 9px;
+            font-size: 14px;
+        }
+
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-left f-left">
+            <h2>美妆专区</h2>
+            <div class="search f-left">
+                <span>热搜词：</span>
+                <a href="#">面膜</a>
+                <a class="hot" href="#">口红</a>
+                <a href="#">眼霜</a>
+                <a class="hot" href="#">精华</a>
+                <a href="#">卸妆</a>
+            </div>
+        </div>
+        <div class="header-right f-right">
+            <a href="#">更多好货 ></a>
+        </div>
+    </div>
+
+</body>
+</html>

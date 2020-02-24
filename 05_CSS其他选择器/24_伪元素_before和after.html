@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* .number {
+            color: red;
+        } */
+
+        /* 结论: 伪元素可以看成是行内元素 */
+        span::before {
+            content: "";
+
+            /* color: red; */
+            background-color: green;
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        span::after {
+            /* content: "abc"; */
+            content: url("../img/test_01.webp");
+
+            color: purple;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <span class="number">1</span> -->
+    <span>我是span元素</span>
+</body>
+</html>

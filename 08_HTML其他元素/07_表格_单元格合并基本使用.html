@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+
+            margin: 0 auto;
+        }
+
+        td {
+            border: 1px solid skyblue;
+            padding: 20px;
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- column: 列 -->
+    <!-- row: 行 -->
+    
+    <table>
+        <tr>
+            <td colspan="2">单元格1</td>
+            <!-- <td>单元格2</td> -->
+            <td>单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td rowspan="2">单元格3</td>
+            <td rowspan="2" colspan="2">单元格4</td>
+            <!-- <td>单元格5</td> -->
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <!-- <td>单元格3</td> -->
+            <!-- <td>单元格4</td> -->
+            <!-- <td>单元格5</td> -->
+        </tr>
+    </table>
+
+</body>
+</html>

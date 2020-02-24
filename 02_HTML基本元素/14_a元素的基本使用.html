@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.基本使用 href: 超链接 -->
+    <p>打开是外部网站</p>
+    <a href="http://www.baidu.com">百度一下</a>
+    <a href="http://www.taobao.com">淘宝一下</a>
+    <a href="http://www.jd.com">京东一下</a>
+
+    <p>打开自己的网页</p>
+    <a href="./12_img元素的属性演练.html">打开图片网站</a>
+
+    <br>
+    <!-- 
+        2.target:
+            _self(默认值): 自己
+            _blank: 空白
+
+            和iframe一起使用时,才有效果
+            _parent:
+            _top:
+            具体的name:
+    -->
+    <p>target属性演练(target=_blank)</p>
+    <a href="http://www.baidu.com" target="_blank">百度一下</a> 
+    
+    <p>target属性演练(target=_parent)</p>
+    <a href="http://www.baidu.com" target="_parent">百度一下</a> 
+    
+    <p>target属性演练(target=_top)</p>
+    <a href="http://www.baidu.com" target="b">百度一下</a> 
+</body>
+</html>

@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1578450290603'); /* IE9 */
+  src: url('iconfont.eot?t=1578450290603#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPkAAsAAAAACEgAAAOVAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDYIMWATYCJAMUCwwABCAFhG0HUBsqBxHVmwXJvjiw6RwPjUyLM/NiU5ywePjSHCs1kr7nIKC8qro7mcsmS+lEPGX/YPwAz9KcjUGYTLcsp4D8sy0kLefoKQD6ISLVXQWLHxwzXdoE8mw2p+yiAU5wNouq/yb7B3n3X4bXLobDOA0BmASTiKisbtACAw08SQBiQN/eXTFSCrSadIGBwFayUlNiLjqGnCYv02GO//viDaEwQKIr8Mwmvap6UPrceJ6txtrHdnARMMfTAdI6UEAioIEYVmoYgAoDiShMo79GKWBiIJFjdXN9nvQ8226POTsSmSQIEm2cf56wgVMdASiFoAbPDUaBhOeujDJhEshQIMwG1r2cpANgAjZgPrATjIvkYyUSgXB0zAqH/vBWi1ds2eTVctHShZtbtF6yZdEyzxYLN25ePtDx7t2PrrkYzVzi03vJDK+ei5ZGmoy9nbuwfLcVPlv2CDFuiWX16mHNWASrbmQ5+b6xC83pi0tkS3ZUSLebif22+jJ24fTF3mLNrRzr0I0gVl5vb40j76r3oykyrXuKGwc6zx4Lm8707rV4XGe3Ps17Xjn92XcM7e31/ur9S7u97soZCv6q1skbsoOTpHNgxInWrUXZs9biXGevxbkFozxGOfccPuba+llc1NV7Uea+zEmDZgXYra2kCa0ntk4Ketit9oVb77yvmol53u+sjy087NbSdalbFWMy9zw1x9jCuyxtEm47rIczKX/pVP+p+t+70+0OGUx3T/+n0fPZjatamRlWTeNKKMZj2v03e8aAXyXHyZZgr36pRLBTE1QZgHorZ/zZv2FRYIfPnSn8ZlgaAA8LOg3zHXYa7YMGEiTmfzRqrlw422Rjpa7pfGrZcQkC0Gk9gknCL6v6exZ3no5j8oJYJzBkJoCkDkGgMIhEathE0LHIBBsGJWCSQM16Cw+GoRCaAxDPJAQCV/aAxJljoHDlClLDPgEdb96BDVehwKSV8NjRIlrgxeyqMDKYQvwPRcItUbWZBekvmH3XkUqyffwHKl24IXD9bPiJLaox5uifLDSGgBQ38EDnYV0zCMUlJsbNjRFHz6Oyb3ITbjqzzlVhZDCF+B+KhFty25tZ7udfMPuuI1VT16D+QKWLziFw/RbIp6BtVXctr9E/WWgMASlu4IF0WJMAgygfVmJi3LyHTxw9rhW1Fbjzi5oHSJeawEfrXSmU0IQubAwjpfh3kHODq0iqU5bQ1kWLo6Q+6HQAAAAA') format('woff2'),
+  url('iconfont.woff?t=1578450290603') format('woff'),
+  url('iconfont.ttf?t=1578450290603') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1578450290603#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e636";
+}
+
+.icon-home:before {
+  content: "\e608";
+}
+
+.icon-arrowsdownline:before {
+  content: "\e62d";
+}
+
+.icon-arrow1:before {
+  content: "\e610";
+}
+

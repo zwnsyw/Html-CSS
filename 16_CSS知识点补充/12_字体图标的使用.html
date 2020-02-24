@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+
+    <style>
+        @font-face {
+            font-family: "iconfont";
+            src: url("./font/iconfont.ttf"),
+                 url("./font/iconfont.eot"),
+                 url("./font/iconfont.svg"),
+                 url("./font/iconfont.woff"),
+                 url("./font/iconfont.woff2");
+        }
+
+        span.iconfont {
+            font-family: "iconfont";
+            font-size: 50px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- \0bac; -> 图标 -->
+    <span class="iconfont">&#xe610;</span>
+    <span class="iconfont">&#xe62d;</span>
+    <span class="iconfont icon-home"></span>
+
+    <!-- 伪元素: content: "\e636" -->
+    <!-- 在HTML作为内容: &#xe636; -->
+    <!-- 在伪元素中作为内容:\e636 -->
+    <span class="iconfont icon-arrow"></span>
+
+</body>
+</html>

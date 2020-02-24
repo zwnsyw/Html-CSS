@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 未访问状态 */
+        a:link {
+            color: red;
+        }
+
+        /* 已经访问过 */
+        a:visited {
+            color: green;
+        }
+
+        /* 手指(鼠标)放上去 */
+        a:hover {
+            color: blue;
+        }
+
+        /* 手指点下去, 未松手 */
+        a:active {
+            color: orange;
+        }
+
+        a {
+            color: red;
+        }
+
+        /* 2.hover/active应用到其他元素 */
+        strong:hover {
+            background-color: purple;
+        }
+
+        strong:active {
+            font-size: 40px;
+        }
+
+
+        /* 3.focus的使用 */
+        input:focus {
+            background-color: #f00;
+        }
+
+        a:focus {
+            /* background-color: #ff0; */
+        }
+
+        /* 4.去掉a元素的焦点状态 */
+        /* a:focus {
+            outline: none;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 1.lv ha -> a元素上 -->
+    <!-- tabindex可以调整tab选中元素的顺序 -->
+    <a tabindex="-1" href="#">Google一下</a>
+
+    <!-- 2.hover/active -->
+    <strong>我是strong元素</strong>
+
+    <!-- 3.focus -->
+    <input type="text">
+</body>
+</html>

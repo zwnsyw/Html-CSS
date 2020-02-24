@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: auto;
+            width: 500px;
+            background-color: #f00;
+        }
+
+        .inner {
+            width: 150px;
+            height: 100px;
+            background-color: #ff0;
+
+            /* 可以实现: 水平方向的 父元素的宽度是auto */
+            margin-left: auto;
+            margin-right: auto;
+
+            /* 实现不了居中: 垂直意味着 父元素高度必须auto */
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 1.left/right/center */
+        .box1 {
+            background-color: #0f0;
+            text-align: center;
+        }
+
+        .box2 {
+            background-color: #f0f;
+            text-align: center;
+        }
+
+        .box3 {
+            background-color: #ff8800;
+            text-align: center;
+        }
+
+        .inner {
+            background-color: purple;
+            width: 200px;
+            display: inline-block;
+        }
+
+        /* justify */
+        .box4 {
+            background-color: red;
+            color: #fff;
+            width: 500px;
+
+            /* text-align: justify对最后一行没有效果 */
+            text-align: justify;
+            /* 如果希望对最后一行起效果 */
+            /* text-align-last: justify; */
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.left/right/center -->
+    <div class="box1">哈哈哈哈</div>
+    <div class="box2">
+        <img src="../img/test_01.webp" alt="">
+    </div>
+
+    <div class="box3">
+        <!-- 块级元素 -->
+        <div class="inner">我是div元素</div>
+    </div>
+
+    <!-- 2.justify(不常用) -->
+    <div class="box4">
+        Hello World Hello World Hello World 
+    </div>
+</body>
+</html>

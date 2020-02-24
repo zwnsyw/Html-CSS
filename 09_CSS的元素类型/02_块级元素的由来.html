@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        /* 
+            display:
+                1.block (浏览器默认给div/p/h1..元素设置了display: block)
+                2.inline (将block元素转回到行内元素)
+                3.none (隐藏元素, 不占据空间)
+                4.inline-block
+                    * 可以和其他元素在同一行显示
+                    * 可以设置宽度和高度
+         */
+
+        span {
+            display: block;
+        }
+
+        div, p, h1 {
+            /* display: inline; */
+            display: inline-block;
+            background-color: #f00;
+            width: 200px;
+            height: 100px;
+        }
+
+        div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>div元素</div>
+    <p>p元素</p>
+    <h1>h1元素</h1>
+
+    <span>span元素</span>
+    <strong>strong元素</strong>
+
+
+
+
+
+
+    <ul>
+        <li>li元素</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>单元格</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* tabbar相关的样式 */
+#top .tabbar {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#top .tabbar .category {
+    position: relative;
+    float: left;
+    width: 164px;
+    background: linear-gradient(90deg, #f00, #ff3264);
+    color: #fff;
+    font-size: 15px;
+}
+
+#top .tabbar .category .lineicon {
+    margin-left: 20px;
+}
+
+#top .tabbar .category span {
+    margin-left: 20px;
+}
+
+#top .tabbar .categories {
+    position: absolute;
+    z-index: 1;
+
+    width: 164px;
+    background: linear-gradient(90deg, red, #ff3264);
+}
+
+#top .tabbar .categories li {
+    height: 42px;
+    padding: 0 3px 0 2px;
+}
+
+#top .tabbar .categories li a {
+    display: block;
+    height: 41px;
+    line-height: 41px;
+    border-top: 1px solid #ff5160;
+}
+
+#top .tabbar .categories li a:hover {
+    background-color: #fff;
+}
+
+#top .tabbar .categories li a:hover img {
+    display: none;
+}
+
+#top .tabbar .categories li a:hover img.active {
+    display: inline;
+}
+
+#top .tabbar .categories li a:hover span {
+    color: #ff1e32;
+}
+
+#top .tabbar .categories li img {
+    position: relative;
+    top: -2px;
+    margin-left: 18px;
+}
+
+#top .tabbar .categories li img.active {
+    display: none;
+}
+
+#top .tabbar .categories li span {
+    color: #fff;
+}
+
+
+#top .tabbar .list {
+    float: left;
+    margin-left: 16px;
+}
+
+#top .tabbar .list li {
+    float: left;
+    margin-left: 10px;
+}
+
+#top .tabbar .list a {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#top .tabbar .list a:hover {
+    color: #ff1e32;
+}
+
+#top .tabbar .list a.active {
+    color: #ff1e32;
+}
+
+/* 轮播图相关样式 */
+#top .banner {
+    position: relative;
+    overflow: hidden;
+    min-width: 1100px;
+}
+
+#top .banner .swiper {
+    display: inline-block;
+    position: relative;
+    /* 1.向左边移动自己的一半 */
+    transform: translate(-50%, 0);
+
+    /* 2.回退父元素的一半 */
+    /* left: 50%; */
+    right: -50%;
+}
+
+#top .banner .swiper img {
+}
+
+#top .banner .swiper:hover .control{
+    display: block;
+}
+
+#top .banner .swiper .control {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    height: 68px;
+}
+
+#top .banner .swiper .control i {
+    width: 34px;
+    height: 68px;
+    background-image: url("../img/kl-sprite-01.png");
+}
+
+#top .banner .swiper .control .prev {
+    float: left;
+    background-position: -625px -68px;
+    margin-left: 174px;
+}
+
+#top .banner .swiper .control .next {
+    float: right;
+    background-position: -670px -67px;
+}
+
+
+#top .banner .swiper .dots {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+#top .banner .swiper .dots .dot {
+    position: absolute;
+    bottom: 5px;
+    left: 180px;
+}
+
+#top .banner .swiper .dots i {
+    float: left;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+#top .banner .swiper .dots i:hover {
+    background-color: #ff3264;
+}
+
+#top .banner .swiper .dots i.active {
+    background-color: #ff3264;
+}
+
+/* 轮播图下面的服务相关样式 */
+#top .banner .service {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    overflow: hidden;
+
+    height: 45px;
+}
+
+#top .banner .service .blur {
+    position: absolute;
+    /* z-index: -1; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    background: url("../img/banner.jpg") center bottom;
+    filter: blur(8px);
+}
+
+#top .banner .service ul {
+    position: relative;
+    /* z-index: 1; */
+    height: 45px;
+    line-height: 45px;
+}
+
+#top .banner .service ul li {
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+

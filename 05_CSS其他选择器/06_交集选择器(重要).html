@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* div {
+            color: red;
+        }
+
+        .one {
+            color: red;
+        } */
+
+        /* 文字1和文字4变成红色 */
+        /* div.one {
+            color: red;
+        } */
+
+        /* 文字2和文字4变成红色 */
+        .one[title="text"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">文字内容1</div>
+    <p class="one" title="text">文字内容2</p>
+    <span class="one">文字内容3</span>
+    <div class="one" title="text">文字内容4</div>
+    <div title="text">文字内容5</div>
+</body>
+</html>

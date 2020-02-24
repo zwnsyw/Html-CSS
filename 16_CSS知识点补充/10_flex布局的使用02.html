@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 550px;
+            height: 400px;
+            background-color: orange;
+            margin: 0 auto;
+            
+            /* 1.开启flex布局*/
+            display: flex;
+
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+        }
+
+        /* 
+         750px - 550px = 200px
+         200 / 3 = 66.66666px
+         250 - 66 = 
+        */
+
+        /* 
+        200 / 5 = 40
+        
+         */
+
+        .item {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            text-align: center;
+
+            /* 1: flex-grow */
+            flex: 1;
+        }
+
+        .item1 {
+            background-color: #f00;
+            /* order: 10; */
+            /* flex-grow: .2;  */
+            /* flex-shrink: .2; */
+
+            /* flex-basis: 200px; */
+        }
+
+        .item2 {
+            background-color: #0f0;
+            /* height: 150px; */
+            /* order: 6; */
+            /* flex-grow: .2;  */
+            /* flex-shrink: .2; */
+        }
+
+        .item3 {
+            background-color: #00f;
+            /* align-self: flex-end; */
+            /* order: 100; */
+            /* flex-grow: .3; */
+            /* flex-shrink: .2; */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+
+    <strong>strong元素</strong>
+
+</body>
+</html>
